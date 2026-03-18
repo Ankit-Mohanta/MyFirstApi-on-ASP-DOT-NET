@@ -53,6 +53,13 @@ app.MapPost("/users", async (MongoService mongo, User user) =>
     return Results.Ok(user);
 });
 
+// examples of all API methods (GET, POST, PUT, DELETE) for the with the Minimal APIs types
+app.MapGet("/example", () => "This is a GET request");
+app.MapPost("/example", () => "This is a POST request");
+app.MapPut("/example", () => "This is a PUT request");
+app.MapDelete("/example", () => "This is a DELETE request");
+app.MapPatch("/example", () => "This is a PATCH request");
+
 app.Run();
 
 // Just like DTOs, records are a great way to represent data in a structured way. In this case, the WeatherForecast record has three properties: Date, TemperatureC, and Summary. The TemperatureF property is calculated based on the TemperatureC property, providing a convenient way to get the temperature in Fahrenheit without needing to store it separately.
