@@ -31,3 +31,4 @@ C:\Ankit\ASP_DOT_NET\MyFirstApi\obj\Debug\net10.0\refint\MyFirstApi.dll
 C:\Ankit\ASP_DOT_NET\MyFirstApi\obj\Debug\net10.0\MyFirstApi.pdb
 C:\Ankit\ASP_DOT_NET\MyFirstApi\obj\Debug\net10.0\MyFirstApi.genruntimeconfig.cache
 C:\Ankit\ASP_DOT_NET\MyFirstApi\obj\Debug\net10.0\ref\MyFirstApi.dll
+C:\Ankit\ASP_DOT_NET\MyFirstApi\obj\Debug\net10.0\MyFirstApi.sourcelink.json
