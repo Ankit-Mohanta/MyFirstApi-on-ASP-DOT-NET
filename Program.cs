@@ -3,6 +3,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+// Add the Mongo service dependecy injection (DI) to the container, so that it can be used in the controllers
+builder.Services.AddSingleton<MongoService>();
 
 var app = builder.Build();
 
@@ -36,6 +38,20 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 })
 .WithName("GetWeatherForecast"); // naming the endpoint for better OpenAPI documentation
+
+// Create the endpoint for getting all users from MongoDB database, which will use the MongoService to fetch the data and return it as a list of User objects
+app.MapGet("/users", async(MongoService mongo) =>
+{
+    var users = await mongo.GetUsersAsync();
+    return users;
+});
+
+// Create the endpoint for creating a new user in MongoDB database, which will accept a User object in the request body and use the MongoService to insert it into the database, then return the created user as a response
+app.MapPost("/users", async (MongoService mongo, User user) =>
+{
+    await mongo.CreateUserAsync(user);
+    return Results.Ok(user);
+});
 
 app.Run();
 

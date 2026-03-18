@@ -32,3 +32,9 @@ C:\Ankit\ASP_DOT_NET\MyFirstApi\obj\Debug\net10.0\MyFirstApi.pdb
 C:\Ankit\ASP_DOT_NET\MyFirstApi\obj\Debug\net10.0\MyFirstApi.genruntimeconfig.cache
 C:\Ankit\ASP_DOT_NET\MyFirstApi\obj\Debug\net10.0\ref\MyFirstApi.dll
 C:\Ankit\ASP_DOT_NET\MyFirstApi\obj\Debug\net10.0\MyFirstApi.sourcelink.json
+C:\Ankit\ASP_DOT_NET\MyFirstApi\bin\Debug\net10.0\DnsClient.dll
+C:\Ankit\ASP_DOT_NET\MyFirstApi\bin\Debug\net10.0\MongoDB.Bson.dll
+C:\Ankit\ASP_DOT_NET\MyFirstApi\bin\Debug\net10.0\MongoDB.Driver.dll
+C:\Ankit\ASP_DOT_NET\MyFirstApi\bin\Debug\net10.0\SharpCompress.dll
+C:\Ankit\ASP_DOT_NET\MyFirstApi\bin\Debug\net10.0\Snappier.dll
+C:\Ankit\ASP_DOT_NET\MyFirstApi\bin\Debug\net10.0\ZstdSharp.dll
